@@ -1,10 +1,13 @@
 def main():
+    print("Initializing report...")
     book_path = "books/frankenstein.txt"
     text = get_book_text(book_path)
-    print(text)
     count = words_count(text)
     print(f"The Frankenstein book counts '{count}' words")
-    print(character_count(text))
+    report = character_count(text)
+    for re in report:
+        print (f"The character '{re}' has been used -{report[re]} times")
+    print ("-----End of report-----")
 
 
 def get_book_text(path):
