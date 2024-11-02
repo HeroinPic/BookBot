@@ -1,6 +1,7 @@
 def main():
-    print("Initializing report...")
-    book_path = "books/frankenstein.txt"
+    print("Give me the file path of the book")
+    book_path = input()
+    print(f"Initializing report of {book_path}")
     text = get_book_text(book_path)
     count = words_count(text)
     print(f"The Frankenstein book counts '{count}' words")
