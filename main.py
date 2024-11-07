@@ -4,7 +4,7 @@ def main():
     print(f"Initializing report of {book_path}")
     text = get_book_text(book_path)
     count = words_count(text)
-    print(f"The Frankenstein book counts '{count}' words")
+    print(f"The {book_path} book counts '{count}' words")
     report = character_count(text)
     for re in report:
         print (f"The character '{re}' has been used -{report[re]} times")
